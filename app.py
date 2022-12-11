@@ -1,4 +1,3 @@
-# Optimized:
 from flask import Flask, request, session
 from twilio.twiml.messaging_response import MessagingResponse
 from chatter.chattyman import ask, append_interaction_to_chat_log
