@@ -14,4 +14,15 @@ Create a file, call it .env and add this to it:
 
     Don't put quotes or anything around it.
     
-    Be sure not to expose your API.    
+    Be sure not to expose your API.  
+
+# Running on a RaspberryPi
+
+These instrucitons on how to iunstall Ngrok on RPi were very useful:
+https://medium.com/@gaelollivier/connect-to-your-raspberry-pi-from-anywhere-using-ngrok-801e9fd1dd46
+
+Once installed, be sure to authenticate with Ngrok and include ./ngrok in the terminal and not ngrok, at least that was what worked for me.
+
+Use ./ngrok http 5000 inside the RPi terminal to start your ngrok port forwarder. Take the https url and add it to the Twilio/Whatsapp HTTP Post section, along with folder name.
+
+
